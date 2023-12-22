@@ -33,14 +33,3 @@ with open('titanic.csv', newline='', encoding='utf-8') as f: #открываем
 
 print("Всего в порту Квинстаун село " + str(min_passengers+max_passengers) + " мужчин минимального и максимального возраста")
 print("Из них выжило " + str(min_alive_passengers+max_alive_passengers))
-'''
-    for row in reader:
-        if row['Age'] != '':
-            if max < float(row['Age']):
-                max = float(row['Age'])
-            if min > float(row['Age']):
-                min = float(row['Age'])
-print(f'Минимум{min}, максимум{max}')
-        if row['Age'] != '' and row['Sex'] == 'male' and row['Embarked'] == 'Q':
-            print(float(row['Age']))
-'''
